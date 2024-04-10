@@ -1,0 +1,15 @@
+services:
+  web:
+    image: apache/hop-web:latest
+    ports:
+      - "8181:8080"
+    environment:
+      - HOP_WEB_THEME=light
+      - HOP_PROJECT_FOLDER=/projects/dw/
+      - HOP_ENVIRONMENT_NAME=dev
+      - HOP_ENVIRONMENT_CONFIG_FILE_NAME_PATHS=/config/dev-env-config.json
+      - HOP_PROJECT_NAME=dw
+      - HOP_SHARED_JDBC_FOLDERS=/config/jdbc/
+    volumes:
+      - ./config:/config
+      - ./projects:/projects

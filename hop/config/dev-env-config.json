@@ -1,0 +1,15 @@
+{
+    "projectsConfig": {
+      "enabled": true,
+      "projectMandatory": true,
+      "defaultProject": "dw",
+      "standardParentProject": "dw",
+      "projectConfigurations": [
+        {
+          "projectName": "dw",
+          "projectHome": "/projects/dw",
+          "configFilename": "project-config.json"
+        }
+      ]
+    }
+  }
