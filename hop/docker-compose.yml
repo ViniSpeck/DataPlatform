@@ -1,3 +1,4 @@
+version: '3.7'
 services:
   web:
     build: ./
@@ -10,6 +11,17 @@ services:
       - HOP_ENVIRONMENT_CONFIG_FILE_NAME_PATHS=/files/config/dev-env-config.json
       - HOP_PROJECT_NAME=dw
       - HOP_SHARED_JDBC_FOLDERS=/files/config/jdbc/
+      - JAVA_OPTS=-Xms3g -Xmx6g
     volumes:
       - ./config:/files/config
       - ./projects:/files/projects
+    deploy:
+      resources:
+        limits:
+          cpus: '3.0'
+          memory: '6G'
+        reservations:
+          cpus: '1.5'
+          memory: '3G'
+    mem_limit: 6g
+    cpus: "3.0"
