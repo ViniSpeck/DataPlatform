@@ -47,25 +47,21 @@ Crie pastas de apoio e o arquivo .env:
 cd airflow && \
 echo -e "AIRFLOW_UID=0\nAIRFLOW_GID=0" > .env && \
 mkdir ./logs ./plugins && \
-cd .. && \
-cd hop && \
+cd ../hop && \
 mkdir ./projects && \
-mkdir ./projects/dw && \
-cd ..
+mkdir ./projects/dw
 ```
 
 ## Subir os Containers
 Inicie os containers PostgreSQL, HOP e Airflow com os seguintes comandos:
 
 ```
-cd postgresql && \
+cd ../postgresql && \
 docker compose up -d && \
-cd .. && \
-cd hop && \
+cd ../hop && \
 docker compose build && \
 docker compose up -d && \
-cd .. && \
-cd airflow && \
+cd ../airflow && \
 docker compose up -d && \
 cd ..
 ```
