@@ -3,6 +3,9 @@
 
 🇧🇷 Plataforma de dados containerizada para uso em cenários de baixa complexidade e orçamento.
 
+## Arquitetura idealizada
+![ArquiteturaBevapV1](https://github.com/ViniSpeck/DataPlatform/assets/69943624/753684f6-7fb6-440e-90a6-30c3c9763c2e)
+
 # Setup
 ## Atualização do Gerenciador de Pacotes
 
@@ -38,7 +41,7 @@ rm -drf DataPlatform
 
 ## Atenção ao ID de Usuário
 
-Verifique o ID do seu usuário com o comando echo $UID. Se o seu ID de usuário não for 1000, altere os seguintes arquivos, substituindo o valor 1000 (antes dos ":") pelo seu ID de usuário:
+Verifique o ID do seu usuário com o comando echo $UID. Se o seu ID de usuário não for 1000, edite os seguintes arquivos, substituindo o valor 1000 (antes dos ":") pelo seu ID de usuário:
 
  - hop/Dockerfile
  - hop/docker-compose.yml
