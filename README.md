@@ -1,5 +1,9 @@
-# Data Platform
+# About
+🇬🇧 Containerized data platform for use in low-complexity, low-budget on-premise scenarios.
 
+🇧🇷 Plataforma de dados containerizada para uso em cenários de baixa complexidade e orçamento.
+
+# Setup
 ## Atualização do Gerenciador de Pacotes
 
 Atualize o gerenciador de pacotes com os seguintes comandos:
